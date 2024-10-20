@@ -1,0 +1,6 @@
+:80 {
+        # Set-up the FCGI location
+        php_fastcgi unix//var/run/php/php-fpm.sock
+        # Set this path to your site's directory.
+        root * /var/www/public
+}
